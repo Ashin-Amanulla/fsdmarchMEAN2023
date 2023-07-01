@@ -1,0 +1,21 @@
+<div class="container">
+    <form [formGroup]="notesForm" (ngSubmit)="onSubmit()">
+      <div class="my-5">
+        <label for="exampleFormControlInput1" class="form-label">Title</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" formControlName="title" />
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label"
+          >Description</label
+        >
+        <textarea
+          class="form-control"
+          id="exampleFormControlTextarea1"
+          rows="3"
+          formControlName="description"
+        ></textarea>
+      </div>
+      <button type="submit" class="btn btn-info">Submit</button>
+    </form>
+  </div>
+  

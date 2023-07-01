@@ -8,6 +8,9 @@ import { AddItemComponent } from './pages/add-item/add-item.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { EditItemComponent } from './pages/edit-item/edit-item.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +19,15 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
     AddItemComponent,
     HeaderComponent,
     FooterComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    EditItemComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
