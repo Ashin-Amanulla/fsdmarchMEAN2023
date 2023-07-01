@@ -1,5 +1,30 @@
 <div class="container">
-  <div  class="text-center fs-3 py-5 text-success" >
-   <span style="cursor: pointer;" (click)="goToAddItem()"> <i class="bi bi-plus-square-fill"></i> Add</span>
+  <div class="text-center fs-3 py-5 text-success">
+    <span style="cursor: pointer" (click)="goToAddItem()">
+      <i class="bi bi-plus-square-fill"></i> Add</span
+    >
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title text-center">Title</h5>
+          <p class="card-text">Description</p>
+
+          <div class="d-flex justify-content-between">
+            <span style="cursor: pointer" (click)="goToAddItem()">
+                <i class="bi bi-pen-fill text-primary"></i> </span
+            >
+
+            <span style="cursor: pointer" (click)="goToAddItem()">
+                <i class="bi bi-trash3-fill text-danger"></i> </span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
